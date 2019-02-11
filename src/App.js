@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <h3 style={{margin: `0 auto`}}>Cormick</h3>
         <NavMenu/>
       </div>
     );

@@ -17,9 +17,9 @@ const NavMenu = () => (
         <li className="menu-item">
           <Link className='nav-bar-link' to="/experience">Experience</Link>
         </li>
-        <li className="menu-item">
+        {/* <li className="menu-item">
           <Link className='nav-bar-link' to="/topics">Topics</Link>
-        </li>
+        </li> */}
       </ul>
 
       <hr />
@@ -27,7 +27,7 @@ const NavMenu = () => (
       <Route exact path="/" component={Home} />
       <Route path="/about" component={AboutMe} />
       <Route path="/experience" component={Experience} />
-      <Route path="/topics" component={Sidebar} />
+      {/* <Route path="/topics" component={Sidebar} /> */}
     </div>
   </Router>
 );

@@ -15,6 +15,7 @@ const Personal = () => (
                 </li>
                 {/* END:  RaspberryPi Server  */}
 
+                <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
 
                 {/* BEGIN:  Coffeescript Server */}
                 <li>
@@ -26,6 +27,8 @@ const Personal = () => (
                 </li>
                 {/* END:  Coffeescript Server  */}
 
+                <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
+
                 {/* BEGIN:  Coffeescript Server */}
                 <li>
                     <div className="project-container">
@@ -35,6 +38,8 @@ const Personal = () => (
                     </div>
                 </li>
                 {/* END:  Coffeescript Server  */}
+
+                <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
 
                 {/* BEGIN:  Wine Perceptron */}
                 <li>
@@ -46,6 +51,8 @@ const Personal = () => (
                 </li>
                 {/* END:  Wine Perceptron  */}
 
+                <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
+
                 {/* BEGIN: Appointment Application */}
                 <li>
                     <div className="project-container">
@@ -55,6 +62,8 @@ const Personal = () => (
                     </div>
                 </li>
                 {/* END: Appointment Application  */}
+
+                <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
 
                 {/* BEGIN: Personal AI */}
                 <li>

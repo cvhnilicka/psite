@@ -12,7 +12,11 @@ const Career = () => (
                         <h3>Software Engineer</h3><h4>CDK Global</h4>
 
                         <p className="career-dates">March 2018 - Present</p>
-                        <hr style={{ width: `inherit` }} />
+
+
+                        <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
+                        
+                        
                         <div className="position-details">
 
                             <h5>Application Performance Monitoring</h5>
@@ -36,11 +40,16 @@ const Career = () => (
                 </li>
                 {/* END: Software Engineer CDK Global */}
 
+                <br />
+
                 {/* BEGIN: Software Intern CDK Global */}
                 <li className="career-position">
                     <div className="career-container">
                         <h3>Software Engineer - Intern</h3><h4>CDK Global</h4>
                         <p className="career-dates">Summer 2017</p>
+
+                        <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
+
                         <div className="position-details">
                             <h5>Application Lyfecycle management</h5>
                             <ul>
@@ -52,12 +61,16 @@ const Career = () => (
                 </li>
                 {/* END: Software Intern CDK Global */}
 
+                <br />
 
                 {/* BEGIN: Akuraa Technologies */}
                 <li className="career-position">
                     <div className="career-container">
                         <h3>Chief Technical Officer</h3><h4>Akuraa Technologies</h4>
                         <p className="career-dates">January 2018 - December 2018</p>
+
+                        <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
+
                         <div className="position-details">
                             <h5>AkuComm</h5>
                             <ul>
@@ -73,11 +86,16 @@ assisting with the front end server</li>
                 </li>
                 {/* END: Akuraa Technologies */}
 
+                <br />
+
                 {/* BEGIN: Mutika Solutions */}
                 <li className="career-position">
                     <div className="career-container">
                         <h3>Co-Founder</h3><h4>Mutika Solutions</h4>
                         <p className="career-dates">October 2017 - February 2018</p>
+
+                        <hr style={{ width: `inherit` }} /> {/* HORIZONTAL BREAK*/}
+
                         <div className="position-details">
                             <h5>Technical Manager</h5>
                             <ul>
@@ -88,6 +106,7 @@ assisting with the front end server</li>
                 </li>
                 {/* END: Mutika Solutions */}
             </ul>
+            <br />
             <br />
         </div>
     </div>

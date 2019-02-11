@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  font-family: "Avenir Next" !important;
+  font-family: "Cochin" !important;
   max-width: 960;
-  width: 80%;
+  width: 70%;
   margin: 7.5% auto;
 }
 
@@ -160,6 +160,10 @@
 
 .info-block ul {
     list-style-type: none;
+}
+
+.career-position {
+    margin: 20px auto;
 }
 
 .info-block .career-container h3 {
