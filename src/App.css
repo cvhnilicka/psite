@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  font-family: "Avenir Next" !important;
+  max-width: 960;
+  width: 80%;
+  margin: 7.5% auto;
 }
 
 .App-logo {
@@ -29,4 +33,162 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.nav-menu {
+    text-decoration: none;
+}
+
+.nav-menu .menu {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-menu .menu .menu-item {
+    display: inline;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px;
+    border-radius: 60%;
+    text-decoration: none;
+}
+
+.nav-bar-link {
+    text-decoration: inherit;
+    text-align: center;
+}
+
+.nav-menu .menu .menu-item:hover {
+    background-color: rgb(214, 214, 245);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}
+
+.side-bar {
+    margin-left: 2.5%;
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: rgba(51, 51, 204, 0.5);
+    text-align: center;
+    width: 15%;
+    float: left;
+}
+
+.side-bar ul {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 0;
+}
+
+.side-bar-link {
+    text-decoration: none;
+    text-align: left;
+    margin-left: 0;
+}
+
+.vertical-line {
+    float: left;
+    margin: 0 10px;
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         70vh;
+    width:          1px;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 0;
+}
+
+.edge-fade {
+    overflow: hidden;
+    height: 70vh;
+    position: relative;
+}
+
+.info-block {
+    overflow-y: scroll;
+    height: inherit;
+    width: inherit;
+}
+
+/*.info-block:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  @include background-image(linear-gradient(left, rgba(255,255,255,0) 0%, white 80%, white 100%));
+  pointer-events: none;
+}*/
+
+.edge-fade:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+    width: 100%;
+    height: 4em;
+}
+
+
+.info-block ul {
+    list-style-type: none;
+}
+
+.info-block .career-container h3 {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.info-block .career-container h4 {
+    display: block;
+    float: right;
+    width: 50%;
+}
+
+.info-block .career-container {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.info-block .career-container .position-details {
+    text-align: left;
+}
+
+.info-block .career-container .position-details li {
+    list-style-type: disc;
+}
+
+p.career-dates {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+}
+
+.content-box {
+    display: block;
+    width: 80%;
+    float: right;
+    height: 70vh;
 }
