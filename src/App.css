@@ -73,10 +73,12 @@
     text-decoration: none;
     color: black;
     display: block;
-    background-color: rgba(51, 51, 204, 0.5);
+    /* background-color: rgba(51, 51, 204, 0.1); */
+    background: linear-gradient(to left,rgba(51, 51, 204, 0.3), transparent 100%);
     text-align: center;
     width: 15%;
     float: left;
+    
 }
 
 .side-bar ul {
@@ -85,10 +87,17 @@
     margin-left: 0;
 }
 
+.side-bar ul li {
+    margin:0 0 20px 0; 
+    /* background-color: black; */
+}
+
 .side-bar-link {
     text-decoration: none;
+    color: black;
     text-align: left;
     margin-left: 0;
+    display: block;
 }
 
 .vertical-line {
