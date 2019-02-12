@@ -1,14 +1,19 @@
 import React from "react";
+import * as ReactBootstrap from 'react-bootstrap';
 
 
 const Career = () => (
     <div className="edge-fade">
         <div className="info-block">
-            <ul>
+        <ReactBootstrap.Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                <ReactBootstrap.Row>
 
-                {/* BEGIN: Software Engineer CDK Global */}
-                <li className="career-position">
-                    <div className="career-container">
+                    <ReactBootstrap.Col sm={9}>
+                        <ReactBootstrap.Tab.Content>                                                            {/* BEGIN: Content Column */}
+
+
+                            <ReactBootstrap.Tab.Pane eventKey="first">                                          {/* BEGIN: First Content Pane */}
+                            <div className="career-container">
                         <h3>Software Engineer</h3><h4>CDK Global</h4>
 
                         <p className="career-dates">March 2018 - Present</p>
@@ -37,13 +42,8 @@ const Career = () => (
                             </ul>
                         </div>
                     </div>
-                </li>
-                {/* END: Software Engineer CDK Global */}
-
-                <br />
-
-                {/* BEGIN: Software Intern CDK Global */}
-                <li className="career-position">
+                    <br />
+                    <br />
                     <div className="career-container">
                         <h3>Software Engineer - Intern</h3><h4>CDK Global</h4>
                         <p className="career-dates">Summer 2017</p>
@@ -58,14 +58,11 @@ const Career = () => (
                             </ul>
                         </div>
                     </div>
-                </li>
-                {/* END: Software Intern CDK Global */}
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: First Content Pane */}
 
-                <br />
 
-                {/* BEGIN: Akuraa Technologies */}
-                <li className="career-position">
-                    <div className="career-container">
+                            <ReactBootstrap.Tab.Pane eventKey="second">                                         {/* BEGIN: Second Content Pane */}
+                            <div className="career-container">
                         <h3>Chief Technical Officer</h3><h4>Akuraa Technologies</h4>
                         <p className="career-dates">January 2018 - December 2018</p>
 
@@ -83,14 +80,10 @@ assisting with the front end server</li>
                             </ul>
                         </div>
                     </div>
-                </li>
-                {/* END: Akuraa Technologies */}
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: Second Content Pane */}
 
-                <br />
-
-                {/* BEGIN: Mutika Solutions */}
-                <li className="career-position">
-                    <div className="career-container">
+                            <ReactBootstrap.Tab.Pane eventKey="third">                                         {/* BEGIN: Third Content Pane */}
+                            <div className="career-container">
                         <h3>Co-Founder</h3><h4>Mutika Solutions</h4>
                         <p className="career-dates">October 2017 - February 2018</p>
 
@@ -103,9 +96,31 @@ assisting with the front end server</li>
                             </ul>
                         </div>
                     </div>
-                </li>
-                {/* END: Mutika Solutions */}
-            </ul>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: Third Content Pane */}
+
+                        </ReactBootstrap.Tab.Content>                                                           {/* END: Content Column */}
+                    </ReactBootstrap.Col>
+                    <ReactBootstrap.Col sm={3}>                                                                 {/* BEGIN: Tab Column */}
+                        <ReactBootstrap.Nav variant="pills" className="flex-column">                            {/* BEGIN: NAV */}
+                            <h5>Career Experience</h5>
+
+                            <ReactBootstrap.Nav.Item>
+                                <ReactBootstrap.Nav.Link eventKey="first">CDK Global</ReactBootstrap.Nav.Link>       {/* Nav Tab */}
+                            </ReactBootstrap.Nav.Item>
+
+
+                            <ReactBootstrap.Nav.Item>
+                                <ReactBootstrap.Nav.Link eventKey="second">Akuraa Technologies</ReactBootstrap.Nav.Link>      {/* Nav Tab */}
+                            </ReactBootstrap.Nav.Item>
+
+                            <ReactBootstrap.Nav.Item>
+                                <ReactBootstrap.Nav.Link eventKey="third">Mutika Solutions</ReactBootstrap.Nav.Link>      {/* Nav Tab */}
+                            </ReactBootstrap.Nav.Item>
+
+                        </ReactBootstrap.Nav>                                                                   {/* END: NAV */}
+                    </ReactBootstrap.Col>                                                                       {/* END: Tab Column */}
+                </ReactBootstrap.Row>
+            </ReactBootstrap.Tab.Container>;
             <br />
             <br />
         </div>
