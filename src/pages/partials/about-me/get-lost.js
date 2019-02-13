@@ -1,4 +1,5 @@
 import React from "react";
+import Gallery from 'react-grid-gallery';
 
 // Images to use for the gallery
 const IMAGES =

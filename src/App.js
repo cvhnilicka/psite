@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
       <h3 style={{margin: `0 auto`}}>Cormick</h3>
+      <br/>
         <NavMenu/>
       </div>
     );
