@@ -2,77 +2,115 @@ import React from "react";
 // import ListGroup from 'react-bootstrap'
 import * as ReactBootstrap from 'react-bootstrap';
 
+
+
+
 const Education = () => (
-    <div className="info-block">
-        <h3>Education Page</h3>
-        <p>Here will be  a blurb about UW Madison and my time there</p>
-        <ul>
-            <li>This list will show projects from school.</li>
-            <li>OS Projects</li>
-            <li>Data Science/DeepLearning Projects</li>
-            <li>Other?</li>
-            <div className="panel panel-default">
-                <div className="panel-body">A Basic Panel</div>
-            </div>
-        </ul>
+    <div className="edge-fade">
+        <div className="info-block">
 
-        <ReactBootstrap.ListGroup variant="flush">
-            <ReactBootstrap.ListGroup.Item>Cras justo odio</ReactBootstrap.ListGroup.Item>
-            <ReactBootstrap.ListGroup.Item>Dapibus ac facilisis in</ReactBootstrap.ListGroup.Item>
-            <ReactBootstrap.ListGroup.Item>Morbi leo risus</ReactBootstrap.ListGroup.Item>
-            <ReactBootstrap.ListGroup.Item>Porta ac consectetur ac</ReactBootstrap.ListGroup.Item>
-        </ReactBootstrap.ListGroup>
+            <ReactBootstrap.Tab.Container id="left-tabs-example" defaultActiveKey="education">
+                <ReactBootstrap.Row>
+
+                    <ReactBootstrap.Col sm={9}>
+                        <ReactBootstrap.Tab.Content>                                                            {/* BEGIN: Content Column */}
 
 
-        <ReactBootstrap.Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
-            <ReactBootstrap.Row>
-                <ReactBootstrap.Col sm={4}>
-                    <ReactBootstrap.ListGroup variant="flush">
-                        <ReactBootstrap.ListGroup.Item action href="#link1">
-                            Link 1
-        </ReactBootstrap.ListGroup.Item>
-                        <ReactBootstrap.ListGroup.Item action href="#link2">
-                            Link 2
-        </ReactBootstrap.ListGroup.Item>
-        <ReactBootstrap.ListGroup.Item action href="#link3">
-                            Link 3
-        </ReactBootstrap.ListGroup.Item>
-                        <ReactBootstrap.ListGroup.Item action href="#link4">
-                            Link 4
-        </ReactBootstrap.ListGroup.Item>
-        <ReactBootstrap.ListGroup.Item action href="#link5">
-                            Link 5
-        </ReactBootstrap.ListGroup.Item>
-                        <ReactBootstrap.ListGroup.Item action href="#link6">
-                            Link 6
-        </ReactBootstrap.ListGroup.Item>
-                    </ReactBootstrap.ListGroup>
-                </ReactBootstrap.Col>
-                <ReactBootstrap.Col sm={8}>
-                    <ReactBootstrap.Tab.Content>
-                        <ReactBootstrap.Tab.Pane eventKey="#link1">
-                            <h3>page 1</h3>
-                        </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link2">
-                            <h3>page 2</h3>
-                        </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link3">
-                            <h3>page 3</h3>
-                        </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link4">
-                            <h3>page 4</h3>
-                        </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link5">
-                            <h3>page 5</h3>
-                        </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link6">
-                            <h3>page 6</h3>
-                        </ReactBootstrap.Tab.Pane>
-                    </ReactBootstrap.Tab.Content>
-                </ReactBootstrap.Col>
-            </ReactBootstrap.Row>
-        </ReactBootstrap.Tab.Container>;
+                            <ReactBootstrap.Tab.Pane eventKey="education">                                          {/* BEGIN: education Content Pane */}
+                                <h3>Education Page</h3>
+                                <p>Here will be  a blurb about UW Madison and my time there</p>
+                                <ul>
+                                    <li>This list will show projects from school.</li>
+                                    <li>OS Projects</li>
+                                    <li>Data Science/DeepLearning Projects</li>
+                                    <li>Other?</li>
+                                    <div className="panel panel-default">
+                                        <div className="panel-body">A Basic Panel</div>
+                                    </div>
+                                </ul>
+
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: education Content Pane */}
+
+
+                            <ReactBootstrap.Tab.Pane eventKey="first">                                          {/* BEGIN: First Content Pane */}
+                                <div className="project-container">
+                                    <h3>RaspberryPiServer</h3>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/RaspberryPiServer">Repo</a>
+                                    <p>A simple socket server running in my house to keep a live report of smart light usage as well as current load on the network. </p>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: First Content Pane */}
+
+
+                            <ReactBootstrap.Tab.Pane eventKey="second">                                         {/* BEGIN: Second Content Pane */}
+                                <div className="project-container">
+                                    <h3>Coffeescript Chat Server</h3>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/chatRoomCoffee">Repo</a>
+                                    <p>A simple socket server written with Coffeescript that provides a live chat environment. </p>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: Second Content Pane */}
+
+
+                        </ReactBootstrap.Tab.Content>                                                           {/* END: Content Column */}
+                    </ReactBootstrap.Col>
+                    <ReactBootstrap.Col sm={3}>                                                                 {/* BEGIN: Tab Column */}
+
+                        <ReactBootstrap.Nav variant="pills" className="flex-column">                            {/* BEGIN: NAV */}
+
+                            <ReactBootstrap.Nav.Item>
+                                <ReactBootstrap.Nav.Link eventKey="education">Education</ReactBootstrap.Nav.Link>      {/* Nav Tab */}
+                            </ReactBootstrap.Nav.Item>
+
+
+                            <h5>OS Projects</h5>
+
+                            <ReactBootstrap.Nav.Item>
+                                <ReactBootstrap.ListGroup as="ul">
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="second">
+                                        Cras justo odio
+  </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as="li">Dapibus ac facilisis in</ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as="li">
+                                        Morbi leo risus
+  </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as="li">Porta ac consectetur ac</ReactBootstrap.ListGroup.Item>
+                                </ReactBootstrap.ListGroup>;
+                            </ReactBootstrap.Nav.Item>
+
+
+
+                        </ReactBootstrap.Nav>                                                                   {/* END: NAV */}
+
+
+
+
+
+
+
+
+                        <ReactBootstrap.Nav variant="pills" className="flex-column">                            {/* BEGIN: NAV */}
+                            <h5>DS projects</h5>
+
+                            <ReactBootstrap.Nav.Item>
+                                <ReactBootstrap.ListGroup as="ul">
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="second">
+                                        Cras justo odio
+  </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as="li">Dapibus ac facilisis in</ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as="li">
+                                        Morbi leo risus
+  </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as="li">Porta ac consectetur ac</ReactBootstrap.ListGroup.Item>
+                                </ReactBootstrap.ListGroup>;
+                            </ReactBootstrap.Nav.Item>
+
+
+                        </ReactBootstrap.Nav>                                                                   {/* END: NAV */}
+                    </ReactBootstrap.Col>                                                                       {/* END: Tab Column */}
+                </ReactBootstrap.Row>
+            </ReactBootstrap.Tab.Container>;
+</div>
     </div>
 );
+
 
 export default Education;

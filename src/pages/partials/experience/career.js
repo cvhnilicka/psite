@@ -105,7 +105,7 @@ assisting with the front end server</li>
                             <h5>Career Experience</h5>
 
                             <ReactBootstrap.Nav.Item>
-                                <ReactBootstrap.Nav.Link eventKey="first">CDK Global</ReactBootstrap.Nav.Link>       {/* Nav Tab */}
+                                <ReactBootstrap.Nav.Link className='green-link' eventKey="first">CDK Global</ReactBootstrap.Nav.Link>       {/* Nav Tab */}
                             </ReactBootstrap.Nav.Item>
 
 
