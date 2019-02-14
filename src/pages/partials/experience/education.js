@@ -3,6 +3,10 @@ import React from "react";
 import * as ReactBootstrap from 'react-bootstrap';
 
 
+// Import PDFS
+import ReportPDF from '../../../pdfs/lstm-report.pdf'
+import Lab2PDF from '../../../pdfs/Lab2.pdf'
+import ShavlikPDF from '../../../pdfs/Maclin-Shavlik1993_Article_UsingKnowledge-basedNeuralNetw.pdf'
 
 
 const Education = () => (
@@ -97,20 +101,77 @@ const Education = () => (
 
                             <ReactBootstrap.Tab.Pane eventKey="ds-a">                                         {/* BEGIN: ds-a Content Pane */}
                                 <div className="project-container">
-                                    <h3>ds-a</h3>
+                                    <h3>Sentiment Analysis </h3>
+                                    <h5>Abstract</h5>
+                                    <p>We aimed to explore the domain of sentiment analysis with multiple
+                                    Long Short Term Memory (LSTM) Recurrent Neural Network architectures.
+                                    LSTM cells are well suited to classify over time series related data
+                                    for they provide a constant stream of relevant information through recurrence,
+                                    while at the same time forgetting irrelevant information. We make use of LSTMs
+                                    to predict the sentiment of an arbitrary tweet as either positive or negative. Sentiments
+                                    classification is could be useful for companies in order to assess people’s
+                                    sentiment about their brand, products, and services. We use the Sentiment140 dataset,
+                                    it consists of tweets that were collected and labeled using emoticons that appeared in
+                                    tweet. These emoticons severe as noisy labels. We also preprocessed the tweets in order
+                                    to limit word embedding entries in our network. Using various LSTM architectures, our models
+                                    were able to reach accuracies of over 80%.
+                                    </p>
+                                    <br/>
+                                    <br/>
+                                    <a target="_blank" href="https://github.com/ede0m/lstm_sent140">Github Repo</a>
+                                    <br/>
+                                    <a target='_blank' href={ReportPDF}>Report</a>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-a Content Pane */}
 
                             <ReactBootstrap.Tab.Pane eventKey="ds-b">                                         {/* BEGIN: ds-b Content Pane */}
                                 <div className="project-container">
-                                    <h3>ds-b</h3>
+                                    <h3>Protein Secondary Structure Folding ANN</h3>
+                                    <p>
+                                    The second lab for my Deep Learning class focused on replicating
+                                    previous work done by our professor, Jude Shavlik. It involved
+                                    utilizing a sliding window to predict a protein's secondary structure.
+                                    </p>
+                                    <br/>
+
+
+                                    <h4>Data Set</h4>
+                                    <p>Test set for study of secondary structure of globular proteins by <strong>Ning Qing</strong> and <strong>Terry Sejnowski.</strong></p>
+                                    <p>There were 128 protiens in the UC-Irvine archive. Train and Test were combined into one file (with train in front). Data was split into three test sets for our version of this network: Train, Tune and Test.</p>
+
+                                    <p>Out of 128 proteins, they were broken up as follows:</p>
+                                    <ul>
+                                        <li>tune: index % 5 = 0</li>
+                                        <li>train: index % 6 = 0</li>
+                                        <li>test: the rest of the proteins</li>
+                                    </ul>
+
+                                    <h4>Network</h4>
+
+                                    <p>This network is implemented with:</p>
+                                    <ul>
+                                        <li>Hinton's Droput</li>
+                                        <li>Momentum Term for backpropagation</li>
+                                        <li>Early Stopping</li>
+                                    </ul>
+                                    <p>Network preforms best with the configuration found in the main method.</p>
+                                    <br/>
+                                    <a target='_blank' href={ShavlikPDF}>Approminately replicated methodology</a>
+                                    <br/>
+                                    <a target='_blank' href={Lab2PDF}>Report</a>
+                                    <br/>
+                                    <a target='_blank' href="https://github.com/ede0m/Protein_SSF_ANN">Repo</a>
+                                    <br/>
+                                    <br/>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-b Content Pane */}
 
 
                             <ReactBootstrap.Tab.Pane eventKey="ds-c">                                         {/* BEGIN: ds-c Content Pane */}
                                 <div className="project-container">
-                                    <h3>ds-c</h3>
+                                    <h3>Wine Perceptron</h3>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/wine-perceptron">Repo</a>
+                                    <p>Perceptron written in Java to categorize wine</p>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-c Content Pane */}
 
@@ -138,20 +199,20 @@ const Education = () => (
                                 <ReactBootstrap.Nav.Link eventKey="education">Education</ReactBootstrap.Nav.Link>      {/* Nav Tab */}
                             </ReactBootstrap.Nav.Item>
 
-                            <h5>DS projects</h5>
+                            <h5>Data Science Projects</h5>
 
                             <ReactBootstrap.Nav.Item>
                                 <ReactBootstrap.ListGroup as="ul">
                                     <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-a">
-                                        A
+                                        Sentiment Analysis - LSTM
                                     </ReactBootstrap.ListGroup.Item>
 
 
                                     <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-b">
-                                        B
+                                        Protein Secondary Structure Folding - ANN
                                     </ReactBootstrap.ListGroup.Item>
                                     <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-c">
-                                        C
+                                        Wine Perceptron
                                     </ReactBootstrap.ListGroup.Item>
                                     <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-d">
                                         D

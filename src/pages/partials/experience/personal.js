@@ -38,14 +38,6 @@ const Personal = () => (
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: Third Content Pane */}
 
 
-                            <ReactBootstrap.Tab.Pane eventKey="fourth">                                         {/* BEGIN: Fourth Content Pane */}
-                                <div className="project-container">
-                                    <h3>Wine Perceptron</h3>
-                                    <a target="_blank" href="https://github.com/cvhnilicka/wine-perceptron">Repo</a>
-                                    <p>Perceptron written in Java to categorize wine</p>
-                                </div>
-                            </ReactBootstrap.Tab.Pane>                                                          {/* END: Fourth Content Pane */}
-
 
                             <ReactBootstrap.Tab.Pane eventKey="fifth">                                         {/* BEGIN: Fifth Content Pane */}
                                 <div className="project-container">
@@ -81,10 +73,6 @@ const Personal = () => (
 
                             <ReactBootstrap.Nav.Item>
                                 <ReactBootstrap.Nav.Link eventKey="third">Mail Room Logistics</ReactBootstrap.Nav.Link>      {/* Nav Tab */}
-                            </ReactBootstrap.Nav.Item>
-
-                            <ReactBootstrap.Nav.Item>
-                                <ReactBootstrap.Nav.Link eventKey="fourth">Wine Perceptron</ReactBootstrap.Nav.Link>      {/* Nav Tab */}
                             </ReactBootstrap.Nav.Item>
 
                             <ReactBootstrap.Nav.Item>

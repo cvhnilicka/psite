@@ -10,7 +10,7 @@
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-/* 
+/*
 .green-link {
     color: green;
 } */
@@ -94,7 +94,7 @@
     text-align: center;
     width: 15%;
     float: left;
-    
+
 }
 
 .side-bar ul {
@@ -104,7 +104,7 @@
 }
 
 .side-bar ul li {
-    margin:0 0 20px 0; 
+    margin:0 0 20px 0;
     /* background-color: black; */
 }
 
@@ -221,3 +221,11 @@ p.career-dates {
     float: right;
     height: 70vh;
 }
+
+.project-container a {
+    float: left;
+}
+
+/*.project-container {
+    float: left;
+}*/
