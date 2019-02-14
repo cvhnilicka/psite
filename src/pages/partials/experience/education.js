@@ -49,9 +49,87 @@ const Education = () => (
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: Second Content Pane */}
 
+                            {/* =================================================================================================================================================
+    ================================================ BEGIN: OS PROJECTS CONTENT PANES =================================================================================
+============================================================================================================================================================================= */}
+
+
+
+                            <ReactBootstrap.Tab.Pane eventKey="os-a">                                         {/* BEGIN: ds-a Content Pane */}
+                                <div className="project-container">
+                                    <h3>os-a</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-a Content Pane */}
+
+                            <ReactBootstrap.Tab.Pane eventKey="os-b">                                         {/* BEGIN: ds-b Content Pane */}
+                                <div className="project-container">
+                                    <h3>os-b</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-b Content Pane */}
+
+
+                            <ReactBootstrap.Tab.Pane eventKey="os-c">                                         {/* BEGIN: ds-c Content Pane */}
+                                <div className="project-container">
+                                    <h3>os-c</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-c Content Pane */}
+
+                            <ReactBootstrap.Tab.Pane eventKey="os-d">                                         {/* BEGIN: ds-d Content Pane */}
+                                <div className="project-container">
+                                    <h3>os-d</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-d Content Pane */}
+
+
+
+                            {/* ===============================================================================================================================================
+    ================================================ END: OS PROJECTS CONTENT PANES =================================================================================
+============================================================================================================================================================================= */}
+
+
+
+
+                            {/* =================================================================================================================================================
+    ================================================ BEGIN: DATA SCIENCE PROJECTS CONTENT PANES =================================================================================
+============================================================================================================================================================================= */}
+
+
+
+                            <ReactBootstrap.Tab.Pane eventKey="ds-a">                                         {/* BEGIN: ds-a Content Pane */}
+                                <div className="project-container">
+                                    <h3>ds-a</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-a Content Pane */}
+
+                            <ReactBootstrap.Tab.Pane eventKey="ds-b">                                         {/* BEGIN: ds-b Content Pane */}
+                                <div className="project-container">
+                                    <h3>ds-b</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-b Content Pane */}
+
+
+                            <ReactBootstrap.Tab.Pane eventKey="ds-c">                                         {/* BEGIN: ds-c Content Pane */}
+                                <div className="project-container">
+                                    <h3>ds-c</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-c Content Pane */}
+
+                            <ReactBootstrap.Tab.Pane eventKey="ds-d">                                         {/* BEGIN: ds-d Content Pane */}
+                                <div className="project-container">
+                                    <h3>ds-d</h3>
+                                </div>
+                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-d Content Pane */}
+
+
+
+                            {/* ===============================================================================================================================================
+    ================================================ END: DATA SCIENCE PROJECTS CONTENT PANES =================================================================================
+============================================================================================================================================================================= */}
+
 
                         </ReactBootstrap.Tab.Content>                                                           {/* END: Content Column */}
                     </ReactBootstrap.Col>
+
                     <ReactBootstrap.Col sm={3}>                                                                 {/* BEGIN: Tab Column */}
 
                         <ReactBootstrap.Nav variant="pills" className="flex-column">                            {/* BEGIN: NAV */}
@@ -60,23 +138,26 @@ const Education = () => (
                                 <ReactBootstrap.Nav.Link eventKey="education">Education</ReactBootstrap.Nav.Link>      {/* Nav Tab */}
                             </ReactBootstrap.Nav.Item>
 
-
-                            <h5>OS Projects</h5>
+                            <h5>DS projects</h5>
 
                             <ReactBootstrap.Nav.Item>
                                 <ReactBootstrap.ListGroup as="ul">
-                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="second">
-                                        Cras justo odio
-  </ReactBootstrap.ListGroup.Item>
-                                    <ReactBootstrap.ListGroup.Item as="li">Dapibus ac facilisis in</ReactBootstrap.ListGroup.Item>
-                                    <ReactBootstrap.ListGroup.Item as="li">
-                                        Morbi leo risus
-  </ReactBootstrap.ListGroup.Item>
-                                    <ReactBootstrap.ListGroup.Item as="li">Porta ac consectetur ac</ReactBootstrap.ListGroup.Item>
-                                </ReactBootstrap.ListGroup>;
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-a">
+                                        A
+                                    </ReactBootstrap.ListGroup.Item>
+
+
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-b">
+                                        B
+                                    </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-c">
+                                        C
+                                    </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-d">
+                                        D
+                                    </ReactBootstrap.ListGroup.Item>
+                                </ReactBootstrap.ListGroup>
                             </ReactBootstrap.Nav.Item>
-
-
 
                         </ReactBootstrap.Nav>                                                                   {/* END: NAV */}
 
@@ -88,20 +169,27 @@ const Education = () => (
 
 
                         <ReactBootstrap.Nav variant="pills" className="flex-column">                            {/* BEGIN: NAV */}
-                            <h5>DS projects</h5>
+                            <h5>OS Projects</h5>
 
                             <ReactBootstrap.Nav.Item>
                                 <ReactBootstrap.ListGroup as="ul">
-                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="second">
-                                        Cras justo odio
-  </ReactBootstrap.ListGroup.Item>
-                                    <ReactBootstrap.ListGroup.Item as="li">Dapibus ac facilisis in</ReactBootstrap.ListGroup.Item>
-                                    <ReactBootstrap.ListGroup.Item as="li">
-                                        Morbi leo risus
-  </ReactBootstrap.ListGroup.Item>
-                                    <ReactBootstrap.ListGroup.Item as="li">Porta ac consectetur ac</ReactBootstrap.ListGroup.Item>
-                                </ReactBootstrap.ListGroup>;
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="os-a">
+                                        A
+                                    </ReactBootstrap.ListGroup.Item>
+
+
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="os-b">
+                                        B
+                                    </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="os-c">
+                                        C
+                                    </ReactBootstrap.ListGroup.Item>
+                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="os-d">
+                                        D
+                                    </ReactBootstrap.ListGroup.Item>
+                                </ReactBootstrap.ListGroup>
                             </ReactBootstrap.Nav.Item>
+
 
 
                         </ReactBootstrap.Nav>                                                                   {/* END: NAV */}
