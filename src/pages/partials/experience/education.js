@@ -8,6 +8,10 @@ import ReportPDF from '../../../pdfs/lstm-report.pdf'
 import Lab2PDF from '../../../pdfs/Lab2.pdf'
 import ShavlikPDF from '../../../pdfs/Maclin-Shavlik1993_Article_UsingKnowledge-basedNeuralNetw.pdf'
 
+const h3_underlined = {
+    'textDecorationLine':'underline'
+}
+
 
 const Education = () => (
     <div className="edge-fade">
@@ -101,7 +105,7 @@ const Education = () => (
 
                             <ReactBootstrap.Tab.Pane eventKey="ds-a">                                         {/* BEGIN: ds-a Content Pane */}
                                 <div className="project-container">
-                                    <h3>Sentiment Analysis </h3>
+                                    <h3 style={h3_underlined}>Sentiment Analysis Using LSTMs</h3>
                                     <h5>Abstract</h5>
                                     <p>We aimed to explore the domain of sentiment analysis with multiple
                                     Long Short Term Memory (LSTM) Recurrent Neural Network architectures.
@@ -126,7 +130,7 @@ const Education = () => (
 
                             <ReactBootstrap.Tab.Pane eventKey="ds-b">                                         {/* BEGIN: ds-b Content Pane */}
                                 <div className="project-container">
-                                    <h3>Protein Secondary Structure Folding ANN</h3>
+                                    <h3 style={h3_underlined}>Protein Secondary Structure Folding ANN</h3>
                                     <p>
                                     The second lab for my Deep Learning class focused on replicating
                                     previous work done by our professor, Jude Shavlik. It involved
@@ -169,7 +173,7 @@ const Education = () => (
 
                             <ReactBootstrap.Tab.Pane eventKey="ds-c">                                         {/* BEGIN: ds-c Content Pane */}
                                 <div className="project-container">
-                                    <h3>Wine Perceptron</h3>
+                                    <h3 style={h3_underlined}>Wine Perceptron</h3>
                                     <a target="_blank" href="https://github.com/cvhnilicka/wine-perceptron">Repo</a>
                                     <p>Perceptron written in Java to categorize wine</p>
                                 </div>
