@@ -174,17 +174,15 @@ const Education = () => (
                             <ReactBootstrap.Tab.Pane eventKey="ds-c">                                         {/* BEGIN: ds-c Content Pane */}
                                 <div className="project-container">
                                     <h3 style={h3_underlined}>Wine Perceptron</h3>
+                                    <p>This was the first perceptron that I wrote in Java. It was our initial homework for my Deep Learning class and we were create a perceptron
+                                        to categorize the <a style={{float: "none"}} target="_blank" href="https://archive.ics.uci.edu/ml/datasets/wine">UC Irvine - Wine</a> as well as the 
+                                        <a style={{float: "none"}} target="_blank" href="https://archive.ics.uci.edu/ml/datasets/Thoracic+Surgery+Data">UC Irvine - Thoracic Surgery</a> datasets.
+                                    </p>
+                                    <br/>
                                     <a target="_blank" href="https://github.com/cvhnilicka/wine-perceptron">Repo</a>
-                                    <p>Perceptron written in Java to categorize wine</p>
+
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-c Content Pane */}
-
-                            <ReactBootstrap.Tab.Pane eventKey="ds-d">                                         {/* BEGIN: ds-d Content Pane */}
-                                <div className="project-container">
-                                    <h3>ds-d</h3>
-                                </div>
-                            </ReactBootstrap.Tab.Pane>                                                          {/* END: ds-d Content Pane */}
-
 
 
                             {/* ===============================================================================================================================================
@@ -218,9 +216,6 @@ const Education = () => (
                                     <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-c">
                                         Wine Perceptron
                                     </ReactBootstrap.ListGroup.Item>
-                                    <ReactBootstrap.ListGroup.Item as={ReactBootstrap.Nav.Link} eventKey="ds-d">
-                                        D
-                                    </ReactBootstrap.ListGroup.Item>
                                 </ReactBootstrap.ListGroup>
                             </ReactBootstrap.Nav.Item>
 
@@ -232,8 +227,8 @@ const Education = () => (
 
 
 
-
-                        <ReactBootstrap.Nav variant="pills" className="flex-column">                            {/* BEGIN: NAV */}
+                        {/* BEGIN: NAV */}  
+                        {/* <ReactBootstrap.Nav variant="pills" className="flex-column">                            
                             <h5>OS Projects</h5>
 
                             <ReactBootstrap.Nav.Item>
@@ -257,7 +252,8 @@ const Education = () => (
 
 
 
-                        </ReactBootstrap.Nav>                                                                   {/* END: NAV */}
+                        </ReactBootstrap.Nav>                                                                    */}
+                        {/* END: NAV */}
                     </ReactBootstrap.Col>                                                                       {/* END: Tab Column */}
                 </ReactBootstrap.Row>
             </ReactBootstrap.Tab.Container>;
