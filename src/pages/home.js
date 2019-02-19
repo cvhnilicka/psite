@@ -37,7 +37,8 @@ const Home = () => (
                     alt="First slide"
                 />
                 <ReactBootstrap.Carousel.Caption>
-                    <h3>Moab - February 2018</h3>
+                <h3>Portland - August 2018</h3>
+                    
                     {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                 </ReactBootstrap.Carousel.Caption>
             </ReactBootstrap.Carousel.Item>
@@ -61,7 +62,7 @@ const Home = () => (
                 />
 
                 <ReactBootstrap.Carousel.Caption>
-                    <h3>Portland - August 2018</h3>
+                <h3>Moab - February 2018</h3>
                     {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
                 </ReactBootstrap.Carousel.Caption>
             </ReactBootstrap.Carousel.Item>
