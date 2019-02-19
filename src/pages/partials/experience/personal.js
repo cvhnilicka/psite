@@ -60,7 +60,7 @@ const Personal = () => (
                     </ReactBootstrap.Col>
                     <ReactBootstrap.Col sm={3}>                                                                 {/* BEGIN: Tab Column */}
                         <ReactBootstrap.Nav variant="pills" className="flex-column">                            {/* BEGIN: NAV */}
-                            <h5>personal projects</h5>
+                            <h5>Personal Projects</h5>
 
                             <ReactBootstrap.Nav.Item>
                                 <ReactBootstrap.Nav.Link eventKey="first">RaspberryPiServer</ReactBootstrap.Nav.Link>       {/* Nav Tab */}
