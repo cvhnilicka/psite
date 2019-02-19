@@ -10,31 +10,31 @@ import Climbing from './partials/about-me/climbing';
 
 const AboutMe = () => (
     <div className="page-container">
-        <ReactBootstrap.Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+        <ReactBootstrap.Tab.Container id="list-group-tabs-example" defaultActiveKey="#climbing">
             <ReactBootstrap.Row>
                 <ReactBootstrap.Col sm={3}>
                     <h4>Beyond the Code</h4>
                     <ReactBootstrap.ListGroup variant="flush">
-                        <ReactBootstrap.ListGroup.Item action href="#link1">
+                        <ReactBootstrap.ListGroup.Item action href="#climbing">
                             Climbing
         </ReactBootstrap.ListGroup.Item>
-                        <ReactBootstrap.ListGroup.Item action href="#link2">
+                        <ReactBootstrap.ListGroup.Item action href="#camping">
                             Camping
         </ReactBootstrap.ListGroup.Item>
-                        <ReactBootstrap.ListGroup.Item action href="#link3">
+                        <ReactBootstrap.ListGroup.Item action href="#getlost">
                             Getting Lost
         </ReactBootstrap.ListGroup.Item>
                     </ReactBootstrap.ListGroup>
                 </ReactBootstrap.Col>
                 <ReactBootstrap.Col sm={8}>
                     <ReactBootstrap.Tab.Content>
-                        <ReactBootstrap.Tab.Pane eventKey="#link1">
+                        <ReactBootstrap.Tab.Pane eventKey="#climbing">
                             <Climbing />
                         </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link2">
+                        <ReactBootstrap.Tab.Pane eventKey="#camping">
                             <Camping />
                         </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link3">
+                        <ReactBootstrap.Tab.Pane eventKey="#getlost">
                             <GetLost />
                         </ReactBootstrap.Tab.Pane>
                     </ReactBootstrap.Tab.Content>

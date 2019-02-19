@@ -11,31 +11,31 @@ import Education from "./partials/experience/education";
 
 const Experience = () => (
     <div className="page-container">
-        <ReactBootstrap.Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+        <ReactBootstrap.Tab.Container id="list-group-tabs-example" defaultActiveKey="#career">
             <ReactBootstrap.Row>
                 <ReactBootstrap.Col sm={3}>
                     <h4>Experience</h4>
                     <ReactBootstrap.ListGroup variant="flush">
-                        <ReactBootstrap.ListGroup.Item action href="#link1">
+                        <ReactBootstrap.ListGroup.Item action href="#career">
                             Career
         </ReactBootstrap.ListGroup.Item>
-                        <ReactBootstrap.ListGroup.Item action href="#link2">
+                        <ReactBootstrap.ListGroup.Item action href="#personal">
                             Personal
         </ReactBootstrap.ListGroup.Item>
-                        <ReactBootstrap.ListGroup.Item action href="#link3">
+                        <ReactBootstrap.ListGroup.Item action href="#education">
                             Education
         </ReactBootstrap.ListGroup.Item>
                     </ReactBootstrap.ListGroup>
                 </ReactBootstrap.Col>
                 <ReactBootstrap.Col sm={8}>
                     <ReactBootstrap.Tab.Content>
-                        <ReactBootstrap.Tab.Pane eventKey="#link1">
+                        <ReactBootstrap.Tab.Pane eventKey="#career">
                             <Career />
                         </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link2">
+                        <ReactBootstrap.Tab.Pane eventKey="#personal">
                             <Personal />
                         </ReactBootstrap.Tab.Pane>
-                        <ReactBootstrap.Tab.Pane eventKey="#link3">
+                        <ReactBootstrap.Tab.Pane eventKey="#education">
                             <Education />
                         </ReactBootstrap.Tab.Pane>
                     </ReactBootstrap.Tab.Content>

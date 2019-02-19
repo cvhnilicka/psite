@@ -15,8 +15,9 @@ const Personal = () => (
                             <ReactBootstrap.Tab.Pane eventKey="first">                                          {/* BEGIN: First Content Pane */}
                                 <div className="project-container">
                                     <h3>RaspberryPiServer</h3>
-                                    <a target="_blank" href="https://github.com/cvhnilicka/RaspberryPiServer">Repo</a>
                                     <p>A simple socket server running in my house to keep a live report of smart light usage as well as current load on the network. </p>
+                                <br/>
+                                <a target="_blank" href="https://github.com/cvhnilicka/RaspberryPiServer">Repo</a>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: First Content Pane */}
 
@@ -24,16 +25,19 @@ const Personal = () => (
                             <ReactBootstrap.Tab.Pane eventKey="second">                                         {/* BEGIN: Second Content Pane */}
                                 <div className="project-container">
                                     <h3>Coffeescript Chat Server</h3>
-                                    <a target="_blank" href="https://github.com/cvhnilicka/chatRoomCoffee">Repo</a>
+                                    
                                     <p>A simple socket server written with Coffeescript that provides a live chat environment. </p>
+                                    <br/>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/chatRoomCoffee">Repo</a>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: Second Content Pane */}
 
                             <ReactBootstrap.Tab.Pane eventKey="third">                                         {/* BEGIN: Third Content Pane */}
                                 <div className="project-container">
                                     <h3>Mail Room Logistics</h3>
-                                    <a target="_blank" href="https://github.com/cvhnilicka/MailRoomLogistics">Repo</a>
                                     <p>The beginning of an Android application for my university's tech department to use in their mailroom for logistics </p>
+                                    <br/>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/MailRoomLogistics">Repo</a>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: Third Content Pane */}
 
@@ -42,17 +46,21 @@ const Personal = () => (
                             <ReactBootstrap.Tab.Pane eventKey="fifth">                                         {/* BEGIN: Fifth Content Pane */}
                                 <div className="project-container">
                                     <h3>Appointment Application</h3>
-                                    <a target="_blank" href="https://github.com/cvhnilicka/Appointment-verison1">Repo</a>
                                     <p>An application to set up appointments with our Tech Department</p>
+                                    <br/>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/Appointment-verison1">Repo</a>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: Fifth Content Pane */}
 
                             <ReactBootstrap.Tab.Pane eventKey="sixth">                                         {/* BEGIN: Sixth Content Pane */}
                                 <div className="project-container">
                                     <h3>Personal AI</h3>
-                                    <a target="_blank" href="https://github.com/cvhnilicka/PersonalAI">PersonalAI</a>
-                                    <a target="_blank" href="https://github.com/cvhnilicka/lil_bill">Lil Bill</a>
+
                                     <p>A couple of attempts messing around with building an  'ai' assistent.</p>
+                                    <br/>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/PersonalAI">PersonalAI</a>
+                                    <br/>
+                                    <a target="_blank" href="https://github.com/cvhnilicka/lil_bill">Lil Bill</a>
                                 </div>
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: Sixth Content Pane */}
 

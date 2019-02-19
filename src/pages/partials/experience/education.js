@@ -25,17 +25,17 @@ const Education = () => (
 
 
                             <ReactBootstrap.Tab.Pane eventKey="education">                                          {/* BEGIN: education Content Pane */}
-                                <h3>Education Page</h3>
-                                <p>Here will be  a blurb about UW Madison and my time there</p>
+                                <h3>Education</h3>
+                                <p>I attended the University of Wisconsin-Madison and while there, earned a Bachelors of Science in Computer Science
+                                    with an emphasis in applied mathematics.
+                                </p>
+                                <h5>Course Work Focused On:</h5>
                                 <ul>
-                                    <li>This list will show projects from school.</li>
-                                    <li>OS Projects</li>
-                                    <li>Data Science/DeepLearning Projects</li>
-                                    <li>Other?</li>
-                                    <div className="panel panel-default">
-                                        <div className="panel-body">A Basic Panel</div>
-                                    </div>
+                                    <li>Data Science</li>
+                                    <li>Machine Learning</li>
+                                    <li>Systems Engineering</li>
                                 </ul>
+                                <h6>Some of my school projects and papers can be found to the right.</h6>
 
                             </ReactBootstrap.Tab.Pane>                                                          {/* END: education Content Pane */}
 

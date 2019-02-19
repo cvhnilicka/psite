@@ -24,7 +24,6 @@ const Climbing = () => (
         Much like Valley Uprising, climbing presents me with an environment where I can completely shut out stressers of my life and focus on the problem at hand. 
         The puzzle-like nature of each route demands your attention to succeed. 
     </p>
-         {/* <Gallery enableImageSelection={false} images={IMAGES}/> */}
     </div>
 );
 
